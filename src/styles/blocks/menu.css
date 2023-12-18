@@ -16,28 +16,9 @@
   color: #d1d5db;
 }
 
+.menu__item--active,
 .menu__item:hover {
   border-radius: 6px;
   background: #111827;
   color: #fff;
-}
-
-@media (width < 768px) {
-  .menu {
-    margin-left: 0;
-  }
-
-  .menu__list {
-    gap: 8px;
-  }
-}
-
-@media (width < 576px) {
-  .menu__list {
-    gap: 4px;
-  }
-
-  .menu__item {
-    font-size: 12px;
-  }
 }
