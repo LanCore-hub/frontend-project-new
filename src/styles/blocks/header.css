@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu{
+    display: flex;
+    width: 1257px;
+    align-items: center;
+}
+
+.leading{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
