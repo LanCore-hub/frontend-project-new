@@ -19,3 +19,9 @@
 .news-banner__left-list-item {
   list-style-type: disc;
 }
+
+@media (width < 576px) {
+  .news-banner__left {
+    grid-column: span 3 / span 3;
+  }
+}
