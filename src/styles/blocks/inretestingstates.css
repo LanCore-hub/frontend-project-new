@@ -42,3 +42,44 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
+
+@media (width < 1280px) {
+  .inretesting-states__banner {
+    gap: 30px;
+  }
+
+  .inretesting-states__header {
+    gap: 10px;
+  }
+
+  .inretesting-states__title {
+    font-size: 24px;
+  }
+
+  .inretesting-states__description {
+    font-size: 16px;
+  }
+}
+
+@media (width < 1024px) {
+  .inretesting-states {
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
+
+  .inretesting-states__wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (width < 768px) {
+  .inretesting-states {
+    display: block;
+  }
+}
+
+@media (width < 576px) {
+  .inretesting-states {
+    padding-bottom: 40px;
+  }
+}

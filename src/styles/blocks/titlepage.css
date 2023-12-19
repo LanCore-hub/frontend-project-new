@@ -4,3 +4,16 @@
   font-size: 40px;
   font-weight: 500;
 }
+
+@media (width < 1280px) {
+  .titlepage {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+}
+
+@media (width < 768px) {
+  .titlepage {
+    font-size: 20px;
+  }
+}

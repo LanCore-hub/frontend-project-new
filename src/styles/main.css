@@ -2,11 +2,9 @@
 @import 'global/utility.css';
 @import 'blocks/header.css';
 @import 'blocks/menu.css';
-@import 'blocks/trailing.css';
 @import 'blocks/titlepage.css';
 @import 'blocks/usefulinformation.css';
 @import 'blocks/inretestingstates.css';
 @import 'blocks/footer.css';
 @import 'blocks/blog.css';
-@import 'blocks/news-banner__left.css';
-@import 'blocks/news-banner__right.css';
+@import 'blocks/news-banner.css';

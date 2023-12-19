@@ -35,3 +35,21 @@
   border-radius: 16px;
   background: #fff;
 }
+
+@media (width < 1280px) {
+  .header__left {
+    gap: 20px;
+  }
+}
+
+@media (width < 1024px) {
+  .header__logo {
+    display: none;
+  }
+}
+
+@media (width < 576px) {
+  .header__name {
+    display: none;
+  }
+}
