@@ -50,9 +50,3 @@
   width: 100%;
   object-fit: cover;
 }
-
-@media (width < 1024px) {
-  .blog {
-    grid-column: span 3 / span 3;
-  }
-}

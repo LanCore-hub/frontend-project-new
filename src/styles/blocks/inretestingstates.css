@@ -66,6 +66,10 @@
     padding-top: 77px;
     padding-bottom: 77px;
   }
+
+  .inretesting-states__wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 @media (width < 768px) {
