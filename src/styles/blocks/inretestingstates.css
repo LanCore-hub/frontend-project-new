@@ -1,0 +1,44 @@
+.inretesting-states {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.inretesting-states__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.inretesting-states__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.inretesting-states__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.8px;
+  align-self: stretch;
+}
+
+.inretesting-states__description {
+  color: #6b7280;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.inretesting-states__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
