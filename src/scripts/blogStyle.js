@@ -11,7 +11,7 @@ function changeStyleBlog(view) {
     GridSVG.classList.remove('inretesting-states__svg--active');
     ListSVG.classList.add('inretesting-states__svg--active');
 
-    blogs.forEach((post) => post.classList.add('blog--list'));
+    blogs.forEach((blog) => blog.classList.add('blog--list'));
   } else {
     wrap.classList.remove('inretesting-states__wrapper__wrapper--list');
     wrap.classList.add('inretesting-states__wrapper--grid');
@@ -19,7 +19,7 @@ function changeStyleBlog(view) {
     ListSVG.classList.remove('inretesting-states__svg--active');
     GridSVG.classList.add('inretesting-states__svg--active');
 
-    blogs.forEach((post) => post.classList.remove('blog--list'));
+    blogs.forEach((blog) => blog.classList.remove('blog--list'));
   }
 }
 

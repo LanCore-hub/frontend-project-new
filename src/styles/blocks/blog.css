@@ -14,10 +14,6 @@
   flex-direction: row;
 }
 
-.blog--list .blog__content {
-  min-height: auto;
-}
-
 .blog__body {
   display: flex;
   padding: 24px;
