@@ -95,6 +95,10 @@
   .inretesting-states {
     display: block;
   }
+
+  .inretesting-states__styles {
+    display: none;
+  }
 }
 
 @media (width < 576px) {
