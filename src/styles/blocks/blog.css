@@ -11,6 +11,7 @@
 }
 
 .blog--list {
+  display: flex;
   flex-direction: row;
 }
 
@@ -53,4 +54,20 @@
   height: 192px;
   width: 100%;
   object-fit: cover;
+}
+
+.blog__img--list {
+  height: auto;
+  width: auto;
+}
+
+@media (width < 768px) {
+  .blog__img--list {
+    height: 192px;
+    width: 100%;
+  }
+
+  .blog--list {
+    display: grid;
+  }
 }

@@ -1,6 +1,10 @@
-function changeStyleBlog(view) {
+export function changeStyleBlog(view) {
+  const listBtn = document.querySelector('.inretesting-states__btn-list');
+  const gridBtn = document.querySelector('.inretesting-states__btn-grid');
+
   const wrap = document.querySelector('.inretesting-states__wrapper');
   const blogs = document.querySelectorAll('.blog');
+  const blogimg_List = document.querySelectorAll('.blog__img');
 
   localStorage.setItem('view', view);
 
@@ -8,23 +12,22 @@ function changeStyleBlog(view) {
     wrap.classList.remove('inretesting-states__wrapper--grid');
     wrap.classList.add('inretesting-states__wrapper--list');
 
-    GridSVG.classList.remove('inretesting-states__svg--active');
-    ListSVG.classList.add('inretesting-states__svg--active');
+    gridBtn.classList.remove('inretesting-states__btn--active');
+    listBtn.classList.add('inretesting-states__btn--active');
 
     blogs.forEach((blog) => blog.classList.add('blog--list'));
+    blogimg_List.forEach((blog_img) => blog_img.classList.add('blog__img--list'));
   } else {
     wrap.classList.remove('inretesting-states__wrapper__wrapper--list');
     wrap.classList.add('inretesting-states__wrapper--grid');
 
-    ListSVG.classList.remove('inretesting-states__svg--active');
-    GridSVG.classList.add('inretesting-states__svg--active');
+    listBtn.classList.remove('inretesting-states__btn--active');
+    gridBtn.classList.add('inretesting-states__btn--active');
 
     blogs.forEach((blog) => blog.classList.remove('blog--list'));
+    blogimg_List.forEach((blog_img) => blog_img.classList.remove('blog__img--list'));
   }
 }
-
-const ListSVG = document.querySelector('.inretesting-states__svg-list');
-const GridSVG = document.querySelector('.inretesting-states__svg-grid');
 
 document.querySelector('.inretesting-states__btn-list').addEventListener('click', () => {
   changeStyleBlog('list');

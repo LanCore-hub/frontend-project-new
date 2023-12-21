@@ -1,2 +1,4 @@
+import { changeStyleBlog } from './blogStyle.js';
+
 const savedStyle = localStorage.getItem('view');
-document.querySelector('.inretesting-states__btn-' + savedStyle).click();
+changeStyleBlog(savedStyle);

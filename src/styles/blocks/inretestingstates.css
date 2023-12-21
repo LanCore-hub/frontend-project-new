@@ -58,7 +58,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.inretesting-states__svg--active {
+.inretesting-states__btn--active {
   color: #ea1313;
 }
 
