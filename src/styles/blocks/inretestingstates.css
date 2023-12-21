@@ -37,10 +37,29 @@
   line-height: 28px;
 }
 
+.inretesting-states__styles {
+  display: flex;
+  gap: 16px;
+}
+
 .inretesting-states__wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+}
+
+.inretesting-states__wrapper--list {
+  display: flex;
+  flex-direction: column;
+}
+
+.inretesting-states__wrapper--grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.inretesting-states__btn--active {
+  color: #ea1313;
 }
 
 @media (width < 1280px) {
@@ -75,6 +94,10 @@
 @media (width < 768px) {
   .inretesting-states {
     display: block;
+  }
+
+  .inretesting-states__styles {
+    display: none;
   }
 }
 
