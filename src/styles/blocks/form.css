@@ -1,0 +1,60 @@
+.form__btn {
+  max-width: 300px;
+  width: 100%;
+  background-color: #fcffe7;
+  font-size: 16px;
+  text-align: center;
+  padding: 13px 0;
+  font-weight: 500;
+  border: 1px solid #000;
+}
+
+.form__btn-add {
+  max-width: none;
+  width: 403px;
+}
+
+.form__btn-cancel {
+  background-color: #fff;
+}
+
+.form {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.show-or-hide {
+  display: none;
+}
+
+.form__create-blog {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 35px;
+  grid-column: 3 / 11;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__input-description {
+  min-height: 127.687px;
+}
+
+.form__btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (width < 768px) {
+  .form__btn-add {
+    width: 200px;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
