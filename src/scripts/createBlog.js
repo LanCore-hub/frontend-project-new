@@ -1,3 +1,5 @@
+import { changeStyleBlog } from './blogStyle.js';
+
 const form = document.querySelector('.form');
 const btnAdd = document.querySelector('.form__btn-add');
 const btnCancel = document.querySelector('.form__btn-cancel');
@@ -12,20 +14,11 @@ btnAdd.addEventListener('click', () => {
   btnAdd.classList.add('show-or-hide');
 });
 
-btnCancel.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  btnAdd.classList.remove('show-or-hide');
-  form.classList.add('show-or-hide');
-
-  blogTitle.value = '';
-  blogImg.value = '';
-  blogDescription.value = '';
+btnCancel.addEventListener('click', () => {
+  clearForm();
 });
 
-btnCreate.addEventListener('click', (e) => {
-  e.preventDefault();
-
+btnCreate.addEventListener('click', () => {
   if (blogTitle.value.trim() === '' || blogImg.value.trim() === '' || blogDescription.value.trim() === '') {
     return;
   }
@@ -86,10 +79,14 @@ btnCreate.addEventListener('click', (e) => {
   const interestingStatesWrapper = document.querySelector('.inretesting-states__wrapper');
   interestingStatesWrapper.appendChild(newBlog);
 
+  const viewNow = localStorage.getItem('view');
+  changeStyleBlog(viewNow);
+
+  clearForm();
+});
+
+function clearForm() {
   btnAdd.classList.remove('show-or-hide');
   form.classList.add('show-or-hide');
-
-  blogTitle.value = '';
-  blogImg.value = '';
-  blogDescription.value = '';
-});
+  document.querySelector('.form__create-blog').reset();
+}

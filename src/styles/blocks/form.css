@@ -42,6 +42,10 @@
   gap: 10px;
 }
 
+.form__input-text {
+  min-height: 44px;
+}
+
 .form__input-description {
   min-height: 127.687px;
 }

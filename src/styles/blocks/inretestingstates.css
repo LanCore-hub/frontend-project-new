@@ -94,7 +94,7 @@
 
 @media (width < 768px) {
   .inretesting-states {
-    display: block;
+    display: flex;
   }
 
   .inretesting-states__styles {

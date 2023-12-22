@@ -1,17 +1,21 @@
+import { changeStyleBlog } from './blogStyle.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('https://techcrunch.com/wp-json/wp/v2/posts?per_page=6')
     .then((response) => response.json())
     .then((blogs) => {
       const inretestingStatesWrapper = document.querySelector('.inretesting-states__wrapper');
       blogs.forEach((blog) => {
-        const newBlog = createPostElement(blog);
+        const newBlog = createBlog(blog);
         inretestingStatesWrapper.appendChild(newBlog);
       });
+      const savedView = localStorage.getItem('view');
+      changeStyleBlog(savedView);
     })
     .catch((error) => console.error('Ошибка:', error));
 });
 
-function createPostElement(blog) {
+function createBlog(blog) {
   const newBlog = document.createElement('article');
   newBlog.classList.add('blog');
 
