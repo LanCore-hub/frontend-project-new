@@ -1,6 +1,8 @@
 .blog {
   border-radius: 8px;
   border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog__title {
@@ -21,6 +23,7 @@
   flex-direction: column;
   align-items: flex-start;
   min-height: 328px;
+  flex-grow: 1;
 }
 
 .blog__info {
@@ -58,7 +61,7 @@
 
 .blog__img--list {
   height: auto;
-  width: auto;
+  width: 400px;
 }
 
 @media (width < 768px) {

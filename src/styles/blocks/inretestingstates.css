@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   gap: 48px;
+  padding-bottom: 40px;
 }
 
 .inretesting-states__header {
@@ -93,16 +94,24 @@
 
 @media (width < 768px) {
   .inretesting-states {
-    display: block;
+    display: flex;
   }
 
   .inretesting-states__styles {
     display: none;
+  }
+
+  .inretesting-states__banner {
+    padding-bottom: 30px;
   }
 }
 
 @media (width < 576px) {
   .inretesting-states {
     padding-bottom: 40px;
+  }
+
+  .inretesting-states__banner {
+    padding-bottom: 20px;
   }
 }
